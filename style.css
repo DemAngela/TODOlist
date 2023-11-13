@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body   {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./assets/tekstura_stena_belyj_147809_1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9D8161;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 12px 21px 14px -5px rgba(19, 19, 18, 0.2);
+}
+
+.todoInput {
+    position: relative;
+}
+
+.imgOne {
+    position: absolute;
+    width: 100px;
+    margin-top: -157px;
+    margin-left: -51px ;
+    rotate: 95deg;
+
+}
+
+.imgTwo {
+    position: absolute;
+    width: 100px;
+    margin-top: -157px;
+    margin-left: 305px ;
+    rotate: 5deg;
+}
+
+.smail {
+    text-align: center;
+}
+
+h1  {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+}
+
+input {
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 350px;
+    margin-bottom: 30px;
+    background-color: #E3DED1;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+input, textarea {
+    outline: none;
+    border: none;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    position: absolute;
+    margin-left: -100px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px ;
+    width: 100px;
+    background-color: #7B5037;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-weight: 700    ;
+}
+
+.error {
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 12px;
+    margin-top: -25px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #911e1e;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 17px;
+    font-family: 'Edu TAS Beginner', cursive;
+    padding: 10px 8px 10px 40px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url("./assets/chekcNo.png") ;
+    background-size: cover;
+    top: 15px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #4F493F;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url("./assets/checked.img.png");
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    color: #4F493F;
+    text-align: center;
+}
+
+ul li span:hover {
+    background: #7B5037;
+    border-radius: 50%;
+    color: black;
+}
